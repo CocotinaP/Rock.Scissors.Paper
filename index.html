@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>
+      Piatr&#259. Foarfec&#259. H&#226rtie
+    </title>
+    <body>
+      <h1>Piatr&#259. Foarfec&#259. H&#226rtie</h1>
+      <section class="move-icon-section">
+        <button class="move-icon-button">
+          <img class="move-icon" id="piatra-button" onclick="moveButtonHandler('piatra')" src="images/piatra.png">
+        </button>
+        <button class="move-icon-button">
+          <img class="move-icon" id="foarfeca-button" onclick="moveButtonHandler('foarfeca')" src="images/foarfeca.png">
+        </button>
+        <button class="move-icon-button">
+          <img class="move-icon" id="hartie-button" onclick="moveButtonHandler('hartie')" src="images/hartie.png">
+        </button>
+      </section>
+      
+      <section>
+        <p class="play-result" id="play-result"></p>
+        <p class="play-battle" id="play-battle">
+        </p>
+        <p class="play-score" id="play-score">
+          Scor: c&#226&#351tiguri &#128512 - <span id="play-score-wins">0</span>&#124 
+          egalitate &#128528 - <span id="play-score-equality">0</span>&#124 
+          pierderi &#128532- <span id="play-score-loss">0</span></p>
+        <button class="reset-score-button" onclick="resetScoreButtonHandler()">Reseteaz&#259 scorul</button>
+      </section>
+
+      <script src="scripts/script.js"></script>
+
+    </body>
+  </head>
+</html>
