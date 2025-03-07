@@ -86,37 +86,37 @@ function randomPick(){
  * Play game.
  *
  * @param {string} playerChoice the player's choice
- * @returns {("Egalitate!😐" | "Ai câștigat!😀" | "Ai pierdut!😞")} 
+ * @returns {("Tie!😐" | "You win!😀" | "You lose!😞")} 
  */
 function playGame(playerChoice){
   computerChoice = randomPick();
 
   if (playerChoice === computerChoice){
-    return "Egalitate!\uD83D\uDE10";
+    return "Tie!\uD83D\uDE10";
   }
 
   if (playerChoice === "piatra"){
     if (computerChoice === "foarfeca"){
-      return "Ai c\u00e2\u0219tigat!\uD83D\uDE00";
+      return "You win!\uD83D\uDE00";
     }
     else{
-      return "Ai pierdut!\uD83D\uDE1E";
+      return "You lose!\uD83D\uDE1E";
     }
   }
   else if (playerChoice === "foarfeca"){
     if (computerChoice === "hartie"){
-      return "Ai c\u00e2\u0219tigat!\uD83D\uDE00";
+      return "You win!\uD83D\uDE00";
     }
     else{
-      return "Ai pierdut!\uD83D\uDE1E";
+      return "You lose!\uD83D\uDE1E";
     }
   }
   else{
     if (computerChoice === "piatra"){
-      return "Ai c\u00e2\u0219tigat!\uD83D\uDE00";
+      return "You win!\uD83D\uDE00";
     }
     else{
-      return "Ai pierdut!\uD83D\uDE1E";
+      return "You lose!\uD83D\uDE1E";
     }
   }
 }
@@ -166,10 +166,10 @@ function showResultAux(choice, elementId){
  * @param {string} result the result of the last game
  */
 function calculateScore(result){
-  if (result === "Ai c\u00e2\u0219tigat!\uD83D\uDE00"){
+  if (result === "You win!\uD83D\uDE00"){
     score.wins++;
   }
-  else if (result === "Ai pierdut!\uD83D\uDE1E"){
+  else if (result === "You lose!\uD83D\uDE1E"){
     score.loss++;
   }
   else{
