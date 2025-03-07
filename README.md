@@ -6,7 +6,7 @@ Of course, the result and score are displayed. And, in addition, the player can 
   The interface is in romanian.
 
 The start look like this:
-![alt text](images/readme/image1.png)
+![Start](images/readme/image1.png)
 If the player chooses/clicks on one of the options: rock, scissors, paper, the computer chooses a random move and the result and score are displayed.
-![alt text](images/readme/image2.png)
+![Play](images/readme/image2.png)
 The player can reset the score by clicking the "Reset Score" button, and the page will look like it did at the beginning.
